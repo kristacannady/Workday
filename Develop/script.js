@@ -3,11 +3,12 @@
 var currentDay = moment().format('dddd, MMMM Do, YYYY');
 $("#currentDay").text(currentDay);
 
-// Makes sure page doesn't load until all elements are ready 
-// $(document).ready(function() 
+// Makes sure page doesn't load until all elements are ready
+        // $(document).ready(function()
 $(document).ready(function () {
 
     // Save the data that is entered
+    
     // saveBtn on click function... 
     $(".saveBtn").on("click", function () {
         // Get nearby values of the description in JQuery
