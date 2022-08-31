@@ -1,38 +1,153 @@
+<!-- Page set up  -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Work Day Scheduler</title>
+</head>
+<!-- End page set up -->
+
+<!-- Display the current day at the top of the page -->
+
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <!-- END date at top of page -->
+
+  <!-- Set up the time boxes -->
+  <!-- 9AM Time Slot -->
+  <div class="container">
+    <div class="row">
+      <div class="hour col-xs-2 col-sm-2 col-md-2 col-lg-1">
+      9 AM
+      </div>
+      <div class="time-block col-xs-8 col-sm-8 col-md-8 col-lg-10" id="9">
+        <textarea class="9"></textarea>
+      </div>
+      <div class="saveBtn col-xs-2 col-sm-2 col-md-2 col-lg-1" id="btn-9">
+        <button class="9"><i class="fas fa-save"></i></button>
+      </div>
+    </div>
+    <!-- End 9AM Time Slot -->
+
+    <!-- 10AM -->
+    <div class="row">
+      <div class="hour col-xs-2 col-sm-2 col-md-2 col-lg-1">
+      10 AM
+      </div>
+      <div class="time-block col-xs-8 col-sm-8 col-md-8 col-lg-10" id="10">
+        <textarea class="10"></textarea>
+      </div>
+      <div class="saveBtn col-xs-2 col-sm-2 col-md-2 col-lg-1" id="btn-10">
+        <button class="10"><i class="fas fa-save"></i></button>
+      </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  </body>
+    <!-- 11AM -->
+    <div class="row">
+      <div class="hour col-xs-2 col-sm-2 col-md-2 col-lg-1">
+      11 AM
+      </div>
+      <div class="time-block col-xs-8 col-sm-8 col-md-8 col-lg-10" id="11">
+        <textarea class="11"></textarea>
+      </div>
+      <div class="saveBtn col-xs-2 col-sm-2 col-md-2 col-lg-1" id="btn-11">
+        <button class="11"><i class="fas fa-save"></i></button>
+      </div>
+    </div>
+
+    <!-- 12PM -->
+    <div class="row">
+      <div class="hour col-xs-2 col-sm-2 col-md-2 col-lg-1">
+      12 PM
+      </div>
+      <div class="time-block col-xs-8 col-sm-8 col-md-8 col-lg-10" id="12">
+        <textarea class="12"></textarea>
+      </div>
+      <div class="saveBtn col-xs-2 col-sm-2 col-md-2 col-lg-1" id="btn-12">
+        <button class="12"><i class="fas fa-save"></i></button>
+      </div>
+    </div>
+
+    <!-- 1PM -->
+    <div class="row">
+      <div class="hour col-xs-2 col-sm-2 col-md-2 col-lg-1">
+      1 PM
+      </div>
+      <div class="time-block col-xs-8 col-sm-8 col-md-8 col-lg-10" id="1">
+        <textarea class="1"></textarea>
+      </div>
+      <div class="saveBtn col-xs-2 col-sm-2 col-md-2 col-lg-1" id="btn-11">
+        <button class="11"><i class="fas fa-save"></i></button>
+      </div>
+    </div>
+    <!-- 2PM -->
+    <div class="row">
+      <div class="hour col-xs-2 col-sm-2 col-md-2 col-lg-1">
+      2 PM
+      </div>
+      <div class="time-block col-xs-8 col-sm-8 col-md-8 col-lg-10" id="2">
+        <textarea class="2"></textarea>
+      </div>
+      <div class="saveBtn col-xs-2 col-sm-2 col-md-2 col-lg-1" id="btn-2">
+        <button class="2"><i class="fas fa-save"></i></button>
+      </div>
+    </div>
+    <!-- 3PM -->
+    <div class="row">
+      <div class="hour col-xs-2 col-sm-2 col-md-2 col-lg-1">
+      3 PM
+      </div>
+      <div class="time-block col-xs-8 col-sm-8 col-md-8 col-lg-10" id="3">
+        <textarea class="3"></textarea>
+      </div>
+      <div class="saveBtn col-xs-2 col-sm-2 col-md-2 col-lg-1" id="btn-3">
+        <button class="3"><i class="fas fa-save"></i></button>
+      </div>
+    </div>
+
+    <!-- 4PM -->
+    <div class="row">
+      <div class="hour col-xs-2 col-sm-2 col-md-2 col-lg-1">
+      4 PM
+      </div>
+      <div class="time-block col-xs-8 col-sm-8 col-md-8 col-lg-10" id="4">
+        <textarea class="4"></textarea>
+      </div>
+      <div class="saveBtn col-xs-2 col-sm-2 col-md-2 col-lg-1" id="btn-4">
+        <button class="4"><i class="fas fa-save"></i></button>
+      </div>
+    </div>
+
+    <!-- 5PM -->
+    <div class="row">
+      <div class="hour col-xs-2 col-sm-2 col-md-2 col-lg-1">
+      5 PM
+      </div>
+      <div class="time-block col-xs-8 col-sm-8 col-md-8 col-lg-10" id="5">
+        <textarea class="5"></textarea>
+      </div>
+      <div class="saveBtn col-xs-2 col-sm-2 col-md-2 col-lg-1" id="btn-5">
+        <button class="5"><i class="fas fa-save"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <footer></footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
 </html>
