@@ -1,18 +1,16 @@
-# Work Day Scheduler Starter Code
+# Work Day Application
 
-GIVEN I am using a daily planner to create a schedule
+## Purpose
+This website has the ability to assist with planning your day. The times are from 9AM-5PM, and allow you to schedule events during each time slot. If the time is in the past, the slot will be white. If the time is current, the slot will be red. If the time is in the future, the slot will be green. This will help you to stay organized during your day.
 
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
+![alt text](./Develop/Photos/Screen%20Shot%202022-08-31%20at%204.31.37%20PM.png) 
+## Built With
+* HTML
+* CSS
+* JQuery
 
-WHEN I scroll down
-THEN I am presented with time blocks for standard business hours
+## Website
+https://kristacannady.github.io/Workday/
 
-WHEN I view the time blocks for that day
-THEN each time block is color-coded to indicate whether it is in the past, present, or future
-WHEN I click into a time block
-THEN I can enter an event
-WHEN I click the save button for that time block
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
+## Contribution
+Made with ❤️ by Krista Cannady
