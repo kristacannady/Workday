@@ -8,10 +8,11 @@ $("#currentDay").text(currentDay);
 $(document).ready(function () {
 
     // Save the data that is entered
-    
+
     // saveBtn on click function... 
     $(".saveBtn").on("click", function () {
-        // Get nearby values of the description in JQuery
+        // Get nearby values of the description in JQuery'
+        // Grabs text area description and time id to set side for local storage
         var text = $(this).siblings(".description").val();
         var time = $(this).parent().attr("id");
 
@@ -24,6 +25,8 @@ $(document).ready(function () {
 
         // loop over time blocks
         $(".time-block").each(function () {
+            // separate the id hourTIME, so it is taking the TIME.. 
+            // parseInt makes it an integer data type 
             var blockTime = parseInt($(this).attr("id").split("hour")[1]);
 
             // To check the time and add the classes for background indicators
